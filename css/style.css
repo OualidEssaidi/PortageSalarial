@@ -56,7 +56,7 @@ header{
 }
 .container h2{
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .container p{
   margin-bottom: 26px;
@@ -83,6 +83,8 @@ header{
 }
 .service div{
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 .service h4{
   font-weight: 600;
@@ -90,4 +92,56 @@ header{
 .service p{
   font-size: 13px;
   text-align: center;
+}
+.simulation{
+  padding: 20px 0;
+  color: #fff;
+  background: linear-gradient(174deg, #7900FF 0%, #FF7900 100%);
+}
+.simulation h4,
+.simulation h2{
+  text-align: center;
+}
+.simulation h4{
+  font-weight: 400;
+}
+.left label,
+.left input{
+  display: block;
+}
+.left label,
+.left input{
+  width: 100%;
+}
+.left div:first-of-type{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.left a{
+  padding: 10px 25px;
+  background-color: #fff;
+  opacity: 0.65;
+  transition: 0.3s;
+}
+
+.left a:hover{
+  opacity: 0.9;
+}
+.active{
+  opacity: 1 !important;
+}
+input[type="range"]{
+  background-color:transparent;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-track{
+  background-color: #fff;
+}
+input[type="range"]::-moz-range-thumb{
+  background-color: #fff;
+  border-color: #FF7900;
 }
