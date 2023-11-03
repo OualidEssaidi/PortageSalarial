@@ -15,8 +15,7 @@ sidenav.classList.remove("active");
 }
 
 
-
-const slider = document.querySelector(".items");		
+		
 const slides = document.querySelectorAll(".item");
 const button = document.querySelectorAll(".button");
 
@@ -29,9 +28,7 @@ for (let i = 0; i < button.length; i++) {
 }
 
 const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
-
 const gotoNext = () => current < 2 ? gotoNum(current + 1) : gotoNum(0);
-
 const gotoNum = number => {
 	current = number;
 	prev = current - 1;
@@ -47,6 +44,8 @@ const gotoNum = number => {
 	slides[prev].classList.add("prev");
 	slides[next].classList.add("next");
 }
+
+setInterval((gotoPrev,gotoNext),5000);
 
 
 const accordion = document.getElementsByClassName('accordion');
