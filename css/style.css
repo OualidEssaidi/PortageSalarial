@@ -50,7 +50,11 @@ header{
   margin: 0 20px;
   overflow: hidden;
 }
-.container div{
+/*.container div{
+  margin: 20px 0 0 0;
+  padding: 20px 0 0 0;
+}*/
+.section{
   margin: 20px 0 0 0;
   padding: 20px 0 0 0;
 }
@@ -163,7 +167,7 @@ input[type="range"]::-moz-range-thumb{
   text-align: center;
 }
 .items{
-
+  height: 280px;
 }
 .item {
   position: absolute; /* postulat de départ */
@@ -195,7 +199,6 @@ input[type="range"]::-moz-range-thumb{
   padding: 10px 20px 20px 20px;
   text-align: left !important;
 }
-
 .active {
   opacity: 1;
   z-index: 99;
@@ -203,22 +206,19 @@ input[type="range"]::-moz-range-thumb{
 }
 .prev {
   z-index: 2;
-  opacity: 0.20;
-  transform: translate(25%, 0%);
+  opacity: 0.40;
+  transform: translate(20%, 0%);
 }
 .next {
   z-index: 2;
-  opacity: 0.20;
-  transform: translate(-25%, 0%);
+  opacity: 0.40;
+  transform: translate(-20%, 0%);
 }
-
-
 .items .button-container {
   position: absolute;
   right: 15%; left: 15%;
   z-index: 100;
 }
-
 .button-container .button {
   color: #fff;
   font-size: 30px;
@@ -233,20 +233,49 @@ input[type="range"]::-moz-range-thumb{
 .button-container .button:hover {
   opacity: 1;
 }
-/*.button-container .button:before {
-  content: "";
-  position: absolute;
-  right: 15%; left: 15%;
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 1);
-  border-radius: 50%;
-  z-index: -99;
-}*/
 .button-container .button:nth-child(1) {
   float: left;
 }
-
 .button-container .button:nth-child(2) {
   float: right;
+}
+.faq h2 {
+  text-align: center;
+}
+.accordion {
+  margin-top: 20px;
+  padding: 0 5px 5px 5px;
+  background: #FF7900;
+  cursor: pointer;
+}
+.title {
+  position: relative;
+  padding: 10px 30px 10px 10px;
+  color: #fff;
+}
+.title::before {
+  content: '+';
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+.content {
+  background-color: #e5e5e5e0;
+  padding: 0px 5px;
+  position: relative;
+  height: 0;
+  font-size: 13px;
+  text-align: justify;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.accordion_active .content {
+  height: 100px;
+}
+.accordion_active .title::before {
+  content: '-';
+  font-size: 30px;
 }

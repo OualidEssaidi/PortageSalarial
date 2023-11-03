@@ -36,22 +36,23 @@ const gotoNum = number => {
 	current = number;
 	prev = current - 1;
 	next = current + 1;
-
 	for (let i = 0; i < slides.length; i++) {
 		slides[i].classList.remove("active");
 		slides[i].classList.remove("prev");
 		slides[i].classList.remove("next");
 	}
-
-	if (next == 3) {
-		next = 0;
-	}
-
-	if (prev == -1) {
-		prev = 2;
-	}
-
+	if (next == 3) next = 0;
+	if (prev == -1) prev = 2;
 	slides[current].classList.add("active");
 	slides[prev].classList.add("prev");
 	slides[next].classList.add("next");
+}
+
+
+const accordion = document.getElementsByClassName('accordion');
+
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('accordion_active')
+  })
 }
