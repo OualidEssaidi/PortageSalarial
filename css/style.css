@@ -337,10 +337,53 @@ input[type="range"]::-moz-range-thumb{
 .inputs input,
 .textarea textarea {
   border: none;
-  background-color: #fff;
 }
 footer {
-  width: 100%;
-  height: 100px;
+  color: #fff;
   background-color: #2d2d2d;
+}
+.logo,
+.map {
+  border-bottom: 1px solid #fff;
+}
+.subscribtion {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.map h2,
+.map ul li {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.map a{
+  color: #fff;
+  opacity: 0.75;
+  transition: 0.3s;
+}
+.map a:hover {
+  opacity: 1;
+}
+.social{
+  width: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.social-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  transition: all 0.3s;
+}
+.facebook {
+  background-image: url("../assets/007-facebook.png");
+}
+.facebook:hover {
+  background-image: url("../assets/008-facebook.png");
+}
+.x {
+  background-image: url("../assets/009-letter-x-1.png");
+}
+.x:hover {
+  background-image: url("../assets/010-letter-x.png");
 }
