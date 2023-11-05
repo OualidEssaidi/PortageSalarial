@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
     <header>
         <h1>LOGO HERE</h1>
         <div id="mySidenav" class="sidenav">
-            <a id="closeBtn" href="close" class="close"><h1>x</h1></a>
+            <a id="closeBtn" href="#" class="close"><h1>x</h1></a>
             <ul>
               <li><a href="#" target="_top">Accueil</a></li>
               <li><a href="#about" target="_self">Qui somme nous ?</a></li>
@@ -26,9 +27,12 @@
     </header>
     <div class="container">
         <div id="welcome" class="intro section">
-            <h2>La simplicité de l'indépendance avec les avantages du salariat</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper nisl augue, ut tristique mi tincidunt a. Cras vel ex lorem. Mauris elit magna, euismod vitae erat placerat, vehicula maximus urna. Vestibulum tempus posuere purus nec condimentum. Proin cursus eu lectus sit amet elementum. Morbi et ultrices magna.</p>
-            <a href="#">Commencez maintenant</a>
+            <div>
+                <h2>La simplicité de l'indépendance avec les avantages du salariat</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper nisl augue, ut tristique mi tincidunt a. Cras vel ex lorem. Mauris elit magna, euismod vitae erat placerat, vehicula maximus urna. Vestibulum tempus posuere purus nec condimentum. Proin cursus eu lectus sit amet elementum. Morbi et ultrices magna.</p>
+                <a href="#">Commencez maintenant</a>
+            </div>
+            <img src="assets/seao.png" alt="work space">
         </div>
         <div id="about" class="about section">
             <h2>Qui Somme nous</h2>
@@ -37,25 +41,27 @@
         <div id="services" class="services section">
             <h2>Solutions Complètes de Portage Salarial</h2>
             <h4>Nos Offres Clés en Main</h4>
-            <div class="service">
-                <div class="image"><img src="assets/001-advice.png" alt="advice service icon"></div>
-                <h4>Conseil & Accompagnement</h4>
-                <p>Aide à la recherche de missions, conseils en négociation, etc.</p>
-            </div>
-            <div class="service">
-                <div class="image"><img src="assets/002-time-management.png" alt=""></div>
-                <h4>Gestion Administrative</h4>
-                <p>Gestion des contrats, facturation.</p>
-            </div>
-            <div class="service">
-                <div class="image"><img src="assets/003-thumbs-up.png" alt=""></div>
-                <h4>Avantages Sociaux</h4>
-                <p>Assurance maladie, retraite, formations.</p>
-            </div>
-            <div class="service">
-                <div class="image"><img src="assets/004-work-space.png" alt=""></div>
-                <h4>Espace Personnel</h4>
-                <p>Suivi en temps réel des missions, documents.</p>
+            <div class="service-bloc">
+                <div class="service">
+                    <div class="image"><img src="assets/001-advice.png" alt="advice service icon"></div>
+                    <h4>Conseil & Accompagnement</h4>
+                    <p>Aide à la recherche de missions, conseils en négociation, etc.</p>
+                </div>
+                <div class="service">
+                    <div class="image"><img src="assets/002-time-management.png" alt=""></div>
+                    <h4>Gestion Administrative</h4>
+                    <p>Gestion des contrats, facturation.</p>
+                </div>
+                <div class="service">
+                    <div class="image"><img src="assets/003-thumbs-up.png" alt=""></div>
+                    <h4>Avantages Sociaux</h4>
+                    <p>Assurance maladie, retraite, formations.</p>
+                </div>
+                <div class="service">
+                    <div class="image"><img src="assets/004-work-space.png" alt=""></div>
+                    <h4>Espace Personnel</h4>
+                    <p>Suivi en temps réel des missions, documents.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -77,8 +83,10 @@
                     <h2>Revenu net :</h2>
                     <h2><span>3 620,64</span> €/mois</h2>
                 </div>
-                <a href="#" class="simulation-btn">Recevoir un bulletin detaillé</a>
-                <a href="#" class="simulation-btn">Commencez maintenant</a>
+                <div class="simulatio-btn">
+                    <a href="#" class="simulation-btn">Recevoir un bulletin detaillé</a>
+                    <a href="#" class="simulation-btn">Commencez maintenant</a>
+                </div>
             </div>
         </div>
     </div>

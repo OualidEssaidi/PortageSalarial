@@ -15,10 +15,10 @@ a {
     color: #000;
 }
 header{
-    padding: 15px 23px;
-    display: flex;
-    justify-content:space-between;
-    background-color: #0086FF;
+  padding: 15px 23px;
+  display: flex;
+  justify-content:space-between;
+  background-color: #0086FF;
 }
 .sidenav {
   height: 100%;
@@ -70,6 +70,9 @@ header{
   text-align: center;
   font-weight: 400;
 }
+.intro img {
+  display: none;
+}
 .intro a{
   color: #fff;
   background-color: #0088ffb5;
@@ -85,6 +88,7 @@ header{
 }
 .service {
   width: 100%;
+  margin: 20px 0;
 }
 .image{
   text-align: center;
@@ -182,7 +186,7 @@ input[type="range"]::-moz-range-thumb{
 }
 .item {
   position: absolute; /* postulat de départ */
-  right: 15%; left: 15%; /* à 50%/50% du parent référent */
+  right: 25%; left: 25%; /* à 50%/50% du parent référent */
   background-color: #0086FF;
   border-radius: 20px;
   opacity: 0;
