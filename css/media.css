@@ -23,4 +23,14 @@
         margin: 0 auto;
         padding-top: 15px;
       }
+      .item {
+        right: 25%; left: 25%;
+      }
+      .items {
+        height: 350px;
+      }
+      .long-text{
+        font-size: 15px !important;
+        padding: 50px 20px;
+      }
 }

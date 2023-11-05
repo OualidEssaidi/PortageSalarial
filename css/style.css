@@ -185,8 +185,8 @@ input[type="range"]::-moz-range-thumb{
   height: 250px;
 }
 .item {
-  position: absolute; /* postulat de départ */
-  right: 25%; left: 25%; /* à 50%/50% du parent référent */
+  position: absolute;
+  right: 15%; left: 15%;
   background-color: #0086FF;
   border-radius: 20px;
   opacity: 0;
