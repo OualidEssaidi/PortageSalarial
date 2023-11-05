@@ -3,9 +3,13 @@
 let sidenav = document.getElementById("mySidenav");
 let openBtn = document.getElementById("open-menu");
 let closeBtn = document.getElementById("closeBtn");
+let menu = document.querySelectorAll("#mySidenav ul li a");
 
 openBtn.onclick = openNav;
 closeBtn.onclick = closeNav;
+menu.forEach(value => {
+    value.addEventListener("click", closeNav)
+})
 
 function openNav() {
 sidenav.classList.add("active");
