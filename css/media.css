@@ -10,29 +10,33 @@
     .intro a{
         font-size: 15px;
         padding: 12px 15px;
-      }
-      .service-bloc {
+    }
+    .service-bloc {
         display: flex;
         justify-content: space-between;
-      }
-      .right a {
+    }
+    .right a {
         display: block;
-      }
-      .simulatio-btn {
+    }
+    .simulatio-btn {
         width: 300px;
         margin: 0 auto;
         padding-top: 15px;
-      }
-      .item {
+    }
+    .item {
         right: 25%; left: 25%;
-      }
-      .items {
+    }
+    .items .button-container {
+        right: 30%; 
+        left: 30%;
+    }
+    .items {
         height: 350px;
-      }
-      .long-text{
+    }
+    .long-text{
         font-size: 15px !important;
         padding: 50px 20px;
-      }
+    }   
 }
 @media screen and (min-width: 850px) {
     #burger__menu {
@@ -50,6 +54,9 @@
     #menu a:hover {
         color: #fff;
     }
+    .container{
+        margin: 0 100px;
+      }
     .intro img {
         width: 400px;
     }
@@ -69,5 +76,71 @@
         flex-direction: column;
         justify-content: center;
         padding-left: 15px;
+    }
+    .simulaion__sides {
+        display: flex;
+        justify-content: space-around;
+    }
+    .left,
+    .right {
+        width: 45%;
+    }
+    .prev {
+        transform: translate(35%, 0%);
+    }
+    .next {
+        transform: translate(-35%, 0%);
+    }
+    .items .button-container {
+        right: 30%; 
+        left: 30%;
+    }
+    .contact__bloc {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact__bloc .contact,
+    .contact__bloc .form {
+        width: 50%;
+    }
+    .form form{ 
+        padding: 0 20px;
+        width: 75%;
+    }
+    .details h2 {
+        padding: 0;
+    }
+    .footer {
+        padding-bottom: 20px;
+    }
+    .map ul {
+        display: flex;
+        justify-content: space-around;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .logo {
+        width: 550px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo p {
+        margin: auto;
+    }
+    .logo, 
+    .map {
+        border: none;
+    }
+    .map ul li {
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 12px;
     }
 }
