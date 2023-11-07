@@ -13,17 +13,26 @@
 <body>
     <header>
         <h1>LOGO HERE</h1>
-        <div id="mySidenav" class="sidenav">
-            <a id="closeBtn" href="#" class="close"><h1>x</h1></a>
-            <ul>
-              <li><a href="#" target="_top">Accueil</a></li>
-              <li><a href="#about" target="_self">Qui somme nous ?</a></li>
-              <li><a href="#services" target="_self">Services</a></li>
-              <li><a href="#simulation" target="_self">Simulation</a></li>
-              <li><a href="#contact" target="_self">Contact</a></li>
-            </ul>
+        <div id="burger__menu">
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close"><h1>x</h1></a>
+                <ul>
+                  <li><a href="#" target="_top">Accueil</a></li>
+                  <li><a href="#about" target="_self">Qui somme nous ?</a></li>
+                  <li><a href="#services" target="_self">Services</a></li>
+                  <li><a href="#simulation" target="_self">Simulation</a></li>
+                  <li><a href="#contact" target="_self">Contact</a></li>
+                </ul>
+            </div>
+            <a href="#"><img id="open-menu" src="assets/000-menu.png" alt="burger-menu"></a>
         </div>
-        <a href="#"><img id="open-menu" src="assets/000-menu.png" alt="burger-menu"></a>
+        <div id="menu">
+                <a href="#" target="_top">Accueil</a>
+                <a href="#about" target="_self">Qui somme nous ?</a>
+                <a href="#services" target="_self">Services</a>
+                <a href="#simulation" target="_self">Simulation</a>
+                <a href="#contact" target="_self">Contact</a>
+        </div>
     </header>
     <div class="container">
         <div id="welcome" class="intro section">
@@ -35,9 +44,14 @@
             <img src="assets/seao.png" alt="work space">
         </div>
         <div id="about" class="about section">
-            <h2>Qui Somme nous</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper nisl augue, ut tristique mi tincidunt a. Cras vel ex lorem. Mauris elit magna, euismod vitae erat placerat, vehicula maximus urna. Vestibulum tempus posuere purus nec condimentum. Proin cursus eu lectus sit amet elementum. Morbi et ultrices magna.</p>
-        </div>
+            <div class="about__img">
+                <img src="assets/team.jpg" alt="Image de fabrikasimf sur Freepik">
+            </div>
+            <div class="about__text">
+                <h2>Qui Somme nous</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper nisl augue, ut tristique mi tincidunt a. Cras vel ex lorem. Mauris elit magna, euismod vitae erat placerat, vehicula maximus urna. Vestibulum tempus posuere purus nec condimentum. Proin cursus eu lectus sit amet elementum. Morbi et ultrices magna.</p>
+           </div>
+         </div>
         <div id="services" class="services section">
             <h2>Solutions Complètes de Portage Salarial</h2>
             <h4>Nos Offres Clés en Main</h4>

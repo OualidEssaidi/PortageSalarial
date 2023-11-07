@@ -1,4 +1,4 @@
-@media screen and (min-width: 640px){
+@media screen and (min-width: 640px) {
     .intro {
         display: flex;
         justify-content: space-between;
@@ -33,4 +33,41 @@
         font-size: 15px !important;
         padding: 50px 20px;
       }
+}
+@media screen and (min-width: 850px) {
+    #burger__menu {
+        display: none;
+    }
+    #menu {
+        display: flex;
+        justify-content: space-around;
+        width: 600px;
+    }
+    #menu a {
+        padding: 10px;
+        transition: all 0.3s;
+    }
+    #menu a:hover {
+        color: #fff;
+    }
+    .intro img {
+        width: 400px;
+    }
+    .intro h2 {
+        margin-top: 50px;
+    }
+    .about {
+        display: flex;
+        justify-content: space-between;
+    }
+    .about__img img {
+        display: block;
+        width: 500px;
+    }
+    .about__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 15px;
+    }
 }
